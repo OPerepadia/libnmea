@@ -12,9 +12,12 @@ typedef enum {
 	NMEA_GPGLL,
 	NMEA_GPGSA,
 	NMEA_GPGSV,
+	NMEA_GPHDT,
 	NMEA_GPRMC,
 	NMEA_GPTXT,
-	NMEA_GPVTG
+	NMEA_GPVTG,
+	NMEA_RBP,
+	NMEA_RBD
 } nmea_t;
 
 /* NMEA cardinal direction types */
@@ -43,7 +46,7 @@ typedef struct {
 } nmea_position;
 
 /* NMEA sentence max length, including \r\n (chars) */
-#define NMEA_MAX_LENGTH		82
+#define NMEA_MAX_LENGTH		128
 
 /* NMEA sentence endings, should be \r\n according the NMEA 0183 standard */
 #define NMEA_END_CHAR_1		'\r'
