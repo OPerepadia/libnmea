@@ -44,9 +44,7 @@ parse(nmea_parser_s *parser, char *value, int val_index)
 	switch (val_index) {
 	case NMEA_GPHDT_HEADING:
 		/* Parse heading */
-		double heading;
-		heading = strtod(value, NULL);
-		data->heading = heading;
+		data->heading = strtod(value, NULL);
 		break;
 	case NMEA_GPHDT_HEADING_TRUE:
 		/* Parse heading True flag */

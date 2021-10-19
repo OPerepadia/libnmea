@@ -7,7 +7,7 @@ init(nmea_parser_s *parser)
 {
 	/* Declare what sentence type to parse */
 	NMEA_PARSER_TYPE(parser, NMEA_RBD);
-	NMEA_PARSER_PREFIX(parser, "RBD");
+	NMEA_PARSER_PREFIX(parser, "GPRBD");
 	return 0;
 }
 
